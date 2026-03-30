@@ -1,9 +1,3 @@
-# Learning-AI-from-Scratch
-This repository records a  AI learning route from scratch 
-
-## A Neural Network in 11 lines of Python (Part 1)
-
-```python
 # there is a one-to-one relationship between a combination of inputs->add an another layer
 import numpy as np
 def nonlin(x,deriv=False):
@@ -29,9 +23,6 @@ print(syn0)
 print(syn1)
 IO=nonlin(x.dot(syn0))
 IO=nonlin(IO.dot(syn1))
-print(IO)
-```
 
-delta=error*deriv(Output/hidden layer)(根据自信度调整)
-update weight: syn+=Input · delta(每个输入对误差的贡献点乘误差->更新值)
-I2_delta->I1_error: 点乘syn1^T^（syn1连接了I1和I2，每个I1对I2误差的贡献度由syn1决定）
+print(IO)
+
